@@ -18,6 +18,19 @@ const routes = [
     name: 'change_password',
     component: () => import('../pages/auth/ChangePassword.vue'),
   },
+
+  // blogs
+  {
+    path: '/blogs',
+    name: 'blogs',
+    component: () => import('@/pages/blogs/Index.vue'),
+    alias: ['/'],
+  },
+  {
+    path: '/blog/:id',
+    name: 'blog_show' ,
+    component: () => import('@/pages/blogs/ShowBlog.vue'),
+  },
 ]
 
 const router = createRouter({
