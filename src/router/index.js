@@ -19,6 +19,14 @@ const routes = [
     component: () => import('../pages/auth/ChangePassword.vue'),
   },
 
+  // users
+  {
+    path: '/users',
+    name: 'users',
+    component: () => import('@/pages/users/Index.vue'),
+    alias: ['/'],
+  },
+
   // blogs
   {
     path: '/blogs',
